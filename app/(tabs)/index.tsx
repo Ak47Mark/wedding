@@ -1,74 +1,61 @@
-import { Image, StyleSheet, Platform } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
+import FlowerFrame from '../flowerFrame';
+import { Colors } from '../colors';
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+    <ScrollView contentContainerStyle={styles.container}>
+      {/* <FlowerFrame /> */}
+      <Text style={styles.names}>Rita & Márk</Text>
+      <Text style={styles.date}>2025. Augusztus 16.</Text>
+      <Text style={styles.subtitle}>Szeretettel várunk az esküvőnkre!</Text>
+
+      <Image
+        source={require('../../assets/images/flower3.png')}
+        style={styles.image}
+      />
+
+      <Text style={styles.footer}>Köszönjük, hogy részese vagy a nagy napunknak 💕</Text>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
+  container: {
+    backgroundColor: Colors.background, // halvány világoskék háttér
+    flexGrow: 1,
     alignItems: 'center',
-    gap: 8,
+    justifyContent: 'center',
+    padding: 24,
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  names: {
+    fontFamily: 'FleurDeLeah_400Regular',
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: Colors.primary, // világoskék
+    marginBottom: 10,
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  date: {
+    fontSize: 20,
+    color: Colors.accent,
+    marginBottom: 20,
+  },
+  subtitle: {
+    fontSize: 18,
+    color: Colors.text,
+    textAlign: 'center',
+    marginBottom: 30,
+  },
+  image: {
+    width: 240,
+    height: 240,
+    resizeMode: 'contain',
+    marginBottom: 30,
+  },
+  footer: {
+    fontSize: 14,
+    color: Colors.secondarytext,
+    textAlign: 'center',
+    marginTop: 30,
   },
 });

@@ -10,12 +10,12 @@ export default function HomeScreen() {
       <Text style={styles.date}>2025. Augusztus 16.</Text>
       <Text style={styles.subtitle}>Szeretettel várunk az esküvőnkre!</Text>
 
-      <Image
+      {/* <Image
         source={require('../../assets/images/flower3.png')}
         style={styles.image}
-      />
+      /> */}
 
-      <Text style={styles.footer}>Köszönjük, hogy részese vagy a nagy napunknak 💕</Text>
+      <Text style={styles.footer}>Köszönjük, hogy részese vagy a nagy napunknak 😻 Máó</Text>
     </ScrollView>
   );
 }
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   date: {
     fontSize: 20,
-    color: Colors.accent,
+    color: Colors.text,
     marginBottom: 20,
   },
   subtitle: {

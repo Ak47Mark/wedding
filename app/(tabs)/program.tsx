@@ -9,12 +9,12 @@ export default function ProgramScreen() {
 
       <View style={styles.event}>
         <Text style={styles.time}>15:30</Text>
-        <Text style={styles.description}>Kapunyitás</Text>
+        <Text style={styles.description}>Vendégvárás</Text>
       </View>
 
       <View style={styles.event}>
         <Text style={styles.time}>16:00</Text>
-        <Text style={styles.description}>Szertartás a Szent Anna templomban</Text>
+        <Text style={styles.description}>Szertartás a Szent Anna Székesegyházban</Text>
       </View>
 
       <View style={styles.event}>
@@ -39,7 +39,8 @@ export default function ProgramScreen() {
 
       <View style={styles.event}>
         <Text style={styles.time}>21:00</Text>
-        <Text style={styles.description}>Első tánc & buli hajnalig 💃🕺</Text>
+        <Text style={styles.description}>Dungeons & Dragons</Text>
+        {/* <Text style={styles.description}>Első tánc & buli hajnalig 💃🕺</Text> */}
       </View>
 
       <Text style={styles.footer}>A program változhat, de az öröm garantált!</Text>

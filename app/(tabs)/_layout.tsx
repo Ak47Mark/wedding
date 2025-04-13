@@ -64,8 +64,6 @@ export default function TabLayout() {
             borderColor: Colors.background,
             height: Platform.OS === 'ios' ? 90 : 70,
             position: 'absolute',
-            left: 10,
-            right: 10,
             bottom: 0,
             paddingBottom: Platform.OS === 'ios' ? 30 : 10,
             shadowColor: '#000',

@@ -6,6 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { FleurDeLeah_400Regular } from '@expo-google-fonts/fleur-de-leah';
+import ThankYou from './screens/ThankYou';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
@@ -34,6 +35,7 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
+        <Stack.Screen name="thank-you" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

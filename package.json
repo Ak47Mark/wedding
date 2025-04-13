@@ -1,6 +1,6 @@
 {
   "name": "eskuvo",
-  "main": "expo-router/entry",
+  "main": "Ak47Mark/eskuvo",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",

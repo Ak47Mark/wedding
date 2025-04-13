@@ -1,7 +1,7 @@
 {
   "name": "eskuvo",
-  "main": "Ak47Mark/eskuvo",
-  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "version": "0.1.0",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",

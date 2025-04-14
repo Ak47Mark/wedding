@@ -1,6 +1,6 @@
 export const Colors = {
-    primary: '#9ec8ff',      // világoskék 004aad
-    background: '#f0f8ff',   // halvány háttér
+    primary: '#004aad',      // világoskék 004aad
+    background: '#ffffff',   // halvány háttér
     white: '#ffffff',
     black: '#333333',
     text: '#34495e',

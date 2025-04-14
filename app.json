@@ -22,6 +22,11 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+    "extra": {
+      "router": {
+        "basePath": ""
+      }
+    },
     "plugins": [
       "expo-router",
       [

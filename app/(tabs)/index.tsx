@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     padding: 24,
   },
   names: {
-    fontFamily: 'FleurDeLeah_400Regular',
+    fontFamily: 'FleurDeLeah',
     fontSize: 36,
     fontWeight: 'bold',
     color: Colors.primary, // világoskék
